@@ -1,0 +1,18 @@
+.wrap {
+  //position: absolute; // 防止outline被overflow hidden截断
+  width: 100%;
+  font-family: PingFangSC-Medium;
+  line-height: 1.5;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04);
+  :global {
+    tr.downward td {
+      border-bottom: 2px dashed #1890ff;
+    }
+    tr.upward td {
+      border-top: 2px dashed #1890ff;
+    }
+    tr.middle td {
+      background-color: #1890ff;
+    }
+  }
+}

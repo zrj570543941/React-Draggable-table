@@ -1,0 +1,53 @@
+{
+  "name": "React-Draggable-table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack",
+    "watch": "rm -rf dist && cross-env TS_NODE_PROJECT=\"./tsconfig-for-webpack-config.json\" webpack-dev-server --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zrj570543941/React-Draggable-table.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zrj570543941/React-Draggable-table/issues"
+  },
+  "homepage": "https://github.com/zrj570543941/React-Draggable-table#readme",
+  "devDependencies": {
+    "@types/classnames": "^2.2.7",
+    "@types/lodash": "^4.14.120",
+    "@types/node": "^10.12.18",
+    "@types/react": "^16.7.20",
+    "@types/react-dom": "^16.0.11",
+    "@types/webpack": "^4.4.24",
+    "antd": "^3.12.4",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "lodash": "^4.17.11",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "sass-loader": "^7.1.0",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.0.1",
+    "tslint": "^5.12.1",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.2.4",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react-dnd": "^7.0.2",
+    "react-dnd-html5-backend": "^7.0.2"
+  }
+}

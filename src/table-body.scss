@@ -1,0 +1,93 @@
+//@import '~variable';
+.tableRowWrapOutter {
+
+}
+
+.emptyDataRow {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.tableBody {
+  //border-right: 1px solid #e8e8e8;
+  //border-left: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+:global {
+  .upward {
+    position: relative;
+    z-index: 999;
+    box-shadow: 0 -1px 0 #547DFC;
+  }
+  .downward {
+    position: relative;
+    z-index: 999;
+    box-shadow: 0 1px 0 #547DFC;
+  }
+  .middle {
+    position: relative;
+    z-index: 999;
+    box-shadow: 0 -1px 0 #547DFC, 0 1px 0 #547DFC,  1px 0 0 #547DFC, -1px 0  0 #547DFC;
+  }
+}
+
+.tableRowWrap {
+  border-top: 1px solid #e8e8e8;
+  background-color: #fff;
+  display: flex;
+  transition: background-color 1s;
+  &:hover {
+    background-color: #f0f6ff;
+  }
+}
+
+.tableCell {
+  vertical-align: top;
+  box-sizing: border-box;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 16px;
+  word-break: break-word;
+}
+
+// 使得自己占满整个tablerowwrap的高度，又使得里面的所有元素都垂直居中
+.firstTableCell {
+  display: inline-flex;
+  align-self: stretch;
+  align-items: center;
+  //padding-left: 10px;
+}
+
+.navigationTreeIcon {
+  cursor: pointer;
+  color: #bababa;
+  //width: 12px;
+  //height: 12px;
+  margin-right: 6px;
+  font-size: 12px;
+  transform: scale(0.9);
+}
+
+.folderFileIcon {
+  margin-right: 2.8px;
+  color: #848795;
+  font-size: 16px;
+  &[class*="icon-ym1"] {
+    vertical-align: -2px !important;
+    //margin-right: 3.7px; // 因为文件图标比文件夹图标视觉上更狭窄，所以使他与文字的间距稍大于文件夹图标的
+  }
+}
+
+.navigationTreeText {
+  font-size: 14px;
+}
+
+.navigationTreeIcon, .folderFileIcon, .navigationTreeText {
+  vertical-align: middle;
+}
+
+//
